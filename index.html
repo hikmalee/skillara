@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skillara — Digital Skills Academy</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <a class="brand" href="#beranda"><span class="brand-icon">S</span> skillara</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">☰</button>
+    <nav id="navMenu">
+      <a href="#beranda">Beranda</a>
+      <a href="#kelas">Kelas</a>
+      <a href="#tentang">Tentang</a>
+      <button class="button button-small" id="registerTop">Daftar Kelas</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="beranda">
+      <div class="hero-copy">
+        <p class="eyebrow">DIGITAL SKILLS ACADEMY</p>
+        <h1>Skill digital untuk <span>masa depanmu.</span></h1>
+        <p class="hero-description">Belajar digital marketing lewat praktik nyata, bangun portofolio, dan persiapkan langkahmu menuju dunia kerja atau usaha.</p>
+        <div class="hero-actions">
+          <a class="button" href="#kelas">Jelajahi Kelas <span>→</span></a>
+          <a class="text-link" href="#tentang">Kenali Skillara</a>
+        </div>
+        <div class="hero-note"><span class="dot"></span> Belajar praktis • Proyek nyata • Ramah pemula</div>
+      </div>
+      <div class="hero-card">
+        <div class="card-top"><span class="mini-label">LEARNING PATH</span><span class="sparkle">✦</span></div>
+        <div class="illustration">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="tile tile-main">✦</div><div class="tile tile-one">Aa</div><div class="tile tile-two">↗</div>
+          <div class="tile tile-three">◎</div>
+        </div>
+        <div class="progress-heading"><strong>Digital Marketing Starter</strong><span>0/4 modul</span></div>
+        <div class="progress-track"><span></span></div>
+        <p class="small-muted">Mulai dari dasar, lalu praktik membuat kampanye digital pertamamu.</p>
+      </div>
+    </section>
+
+    <section class="section courses-section" id="kelas">
+      <div class="section-heading">
+        <div><p class="eyebrow">PILIH JALUR BELAJARMU</p><h2>Kelas yang bikin kamu <span>siap praktik.</span></h2></div>
+        <p>Materi dirancang untuk pemula dan berfokus pada keterampilan yang bisa ditunjukkan lewat portofolio.</p>
+      </div>
+      <div class="filter-row" aria-label="Filter kelas">
+        <button class="filter active" data-filter="Semua">Semua kelas</button>
+        <button class="filter" data-filter="Konten">Konten & desain</button>
+        <button class="filter" data-filter="Marketing">Marketing</button>
+        <button class="filter" data-filter="Copywriting">Copywriting</button>
+      </div>
+      <div class="course-grid" id="courseGrid">
+        <article class="course-card" data-category="Konten">
+          <div class="course-art art-mint"><span class="art-icon">▧</span><span class="art-tag">KREATIF</span></div>
+          <div class="course-content"><span class="course-level">PEMULA · 2 MINGGU</span><h3>Content Creation & Design</h3><p>Rancang konten media sosial dan visual promosi yang konsisten.</p><div class="course-bottom"><strong>Rp149.000</strong><button class="course-button" data-course="Content Creation & Design">Lihat kelas ↗</button></div></div>
+        </article>
+        <article class="course-card" data-category="Marketing">
+          <div class="course-art art-yellow"><span class="art-icon">↗</span><span class="art-tag">STRATEGI</span></div>
+          <div class="course-content"><span class="course-level">PEMULA · 3 MINGGU</span><h3>Digital Marketing Dasar</h3><p>Pahami audiens, susun strategi, dan ukur hasil pemasaran digital.</p><div class="course-bottom"><strong>Rp199.000</strong><button class="course-button" data-course="Digital Marketing Dasar">Lihat kelas ↗</button></div></div>
+        </article>
+        <article class="course-card" data-category="Copywriting">
+          <div class="course-art art-lilac"><span class="art-icon">Aa</span><span class="art-tag">KOMUNIKASI</span></div>
+          <div class="course-content"><span class="course-level">PEMULA · 1 MINGGU</span><h3>Copywriting untuk Pemula</h3><p>Belajar membuat caption, headline, dan pesan promosi yang jelas.</p><div class="course-bottom"><strong>Rp99.000</strong><button class="course-button" data-course="Copywriting untuk Pemula">Lihat kelas ↗</button></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section about-section" id="tentang">
+      <div class="about-mark">S<span>✦</span></div>
+      <div><p class="eyebrow">BELAJAR SAMBIL MEMBANGUN</p><h2>Bukan cuma paham. <span>Punya bukti karya.</span></h2><p>Skillara adalah konsep platform pelatihan digital untuk lulusan SMA, MA, dan pesantren yang ingin mengembangkan keterampilan digital untuk bekerja, freelance, atau membangun usaha.</p><a class="text-link" href="#kelas">Temukan kelas pertamamu →</a></div>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#beranda"><span class="brand-icon">S</span> skillara</a><p>Belajar hari ini, berkarya esok hari.</p><span>© 2026 Skillara · Prototype edukasi</span></footer>
+
+  <dialog id="courseDialog">
+    <button class="dialog-close" id="closeDialog" aria-label="Tutup">×</button>
+    <p class="eyebrow">DETAIL PROGRAM</p><h2 id="dialogTitle">Nama Kelas</h2>
+    <p id="dialogDescription">Deskripsi kelas.</p>
+    <ul><li>Materi terstruktur untuk pemula</li><li>Latihan praktik dan proyek portofolio</li><li>Evaluasi hasil belajar</li></ul>
+    <button class="button" id="registerDialog">Daftar minat kelas ini</button>
+    <p class="small-muted">Pendaftaran ini hanya simulasi prototype, belum memproses pembayaran.</p>
+  </dialog>
+
+  <dialog id="registerDialogBox">
+    <button class="dialog-close" id="closeRegister" aria-label="Tutup">×</button>
+    <p class="eyebrow">FORM MINAT PESERTA</p><h2>Mulai perjalananmu.</h2>
+    <form id="registerForm">
+      <label for="fullName">Nama lengkap</label><input id="fullName" name="fullName" required placeholder="Masukkan nama kamu" />
+      <label for="email">Email</label><input id="email" name="email" type="email" required placeholder="nama@email.com" />
+      <label for="goal">Tujuan belajar</label><select id="goal" name="goal"><option>Siap kerja</option><option>Freelance</option><option>Mengembangkan usaha</option></select>
+      <button class="button" type="submit">Kirim minat</button>
+    </form>
+    <p class="small-muted">Data hanya ditampilkan sebagai simulasi di browser dan tidak dikirim ke server.</p>
+  </dialog>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
